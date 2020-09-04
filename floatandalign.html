@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5em;
+    }
+    .container{
+      max-width: 960px;
+      margin: 30px auto;
+    }
+    .box{
+      background: cornsilk;
+      border: 2px solid black;
+      padding: 20px;
+      margin:15px;
+    }
+    .box p{
+      text-align: center;
+    }
+    #box-2{
+      float:left;
+      width:60%;
+    }
+    #box-3{
+      float:right;
+      width: 30%;
+    }
+    .clr{
+      clear: both;
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      color: crimson;
+    }
+    /* a:visited{
+      color: blue;
+    } */
+    a:active{
+      color: black;
+    }
+    .btn{
+      background: #4c6ca0;
+      color:#fff;
+      border: none;
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="btn"></a><br><br>
+  <button class="btn">my button</button>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque ducimus architecto amet ipsam! Fuga temporibus minima adipisci. Voluptates, est!</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque ducimus architecto amet ipsam! Fuga temporibus minima adipisci. Voluptates, est!</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque ducimus architecto amet ipsam! Fuga temporibus minima adipisci. Voluptates, est!</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque ducimus architecto amet ipsam! Fuga temporibus minima adipisci. Voluptates, est!</p>
+    </div>
+  </div>
+</body>
+</html>
