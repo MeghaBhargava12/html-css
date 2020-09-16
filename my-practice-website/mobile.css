@@ -1,0 +1,59 @@
+@media (max-width: 780px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #explore .explore-grid {
+    grid-template-columns: repeat(2, 320px);
+  }
+
+  .explore-grid .card img:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 380px) {
+  #main-nav {
+    justify-content: space-around;
+  }
+
+  #main-nav i {
+    display: none;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  #about-right {
+    margin: 0.5rem;
+  }
+
+  #about-right img {
+    width: 320px;
+  }
+
+  #explore .explore-grid {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .explore-grid .card img {
+    width: 290px;
+    height: 300px;
+  }
+
+  .explore-grid .card img:hover {
+    transform: scale(1);
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}
