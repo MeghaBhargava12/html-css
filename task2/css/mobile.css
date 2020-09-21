@@ -1,0 +1,135 @@
+@media (max-width: 1175px) {
+  nav .bottom-nav {
+    display: none;
+  }
+  .container1 {
+    margin-top: 80px;
+  }
+
+  /* nav .top-nav .top-nav-right .menu-ham,
+  nav .top-nav .top-nav-right span {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+
+  nav .top-nav .top-nav-right span {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  nav .top-nav .top-nav-right .menu-ham .toggler {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  nav .top-nav .top-nav-right .menu-ham .hamburger {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    background: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  nav .top-nav .top-nav-right .menu-ham .hamburger > div {
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+
+  nav .top-nav .top-nav-right .menu-ham .hamberger > div::before,
+  nav .top-nav .top-nav-right .menu-ham .hamberger > div::after {
+    content: '';
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+  }
+
+  nav .top-nav .top-nav-right .menu-ham .hamberger > div::after {
+    top: 10px;
+  } */
+
+  .header .text-display h2 {
+    font-size: 25px;
+  }
+
+  .partner-img .image img {
+    width: 100px;
+    height: 100px;
+  }
+  .blog-card .blog-cards {
+    width: 300px;
+  }
+  .blog-card .blog-cards img {
+    width: 300px;
+    height: 200px;
+  }
+  #frame {
+    background: url('../img/map_tata-1.png') no-repeat center center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    margin-top: 80px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .gallary {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallary .item {
+    width: 100%;
+  }
+
+  .gallary .item.item4 {
+    transform: translateY(0);
+  }
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 769px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
