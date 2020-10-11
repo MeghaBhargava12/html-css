@@ -10,9 +10,14 @@ class BitCoin{
 
   }
   async getCurrentPrice(currency){
-    const currencyResponse=await fetch(`https://api.coindesk.com/v1/bpi/currentprice/${currency}.json`);
-    const currencyPrice=await currencyResponse.json();
-    // console.log(currencyPrice);
-    return currencyPrice;
+    const cus=await fetch(`https://api.coindesk.com/v1/bpi/currentprice/${currency}.json`);
+    const usd=await fetch(`https://api.coindesk.com/v1/bpi/currentprice/USD.json`);
+    const gbp=await fetch(`https://api.coindesk.com/v1/bpi/currentprice/GBP.json`);
+    const eur=await fetch(`https://api.coindesk.com/v1/bpi/currentprice/EUR.json`);
+    const cusPrice=await cus.json();
+    const usdPrice=await usd.json();
+    const gbpPrice=await gbp.json();
+    const eurPrice=await eur.json();
+    return {cusPrice,usdPrice,gbpPrice,eurPrice};
   }
 }

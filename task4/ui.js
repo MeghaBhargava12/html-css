@@ -46,8 +46,13 @@ class UI{
     document.getElementById('selected-country-price').innerHTML=rate;
   }
 
-  getPrice(c1,country){
-   document.getElementById(country).innerHTML= c1;
+  getPrice(data){
+  //  document.getElementById(country).innerHTML= data;
+  document.getElementById('usd').innerHTML=data.usdPrice.bpi.USD.rate;
+  document.getElementById('gbp').innerHTML=data.gbpPrice.bpi.GBP.rate;
+  document.getElementById('eur').innerHTML=data.eurPrice.bpi.EUR.rate;
+  document.getElementById('selected-country').innerHTML=Object.entries(data.cusPrice.bpi)[1][1].description;
+  document.getElementById('selected-country-price').innerHTML=Object.entries(data.cusPrice.bpi)[1][1].rate;
   }
 }
 
