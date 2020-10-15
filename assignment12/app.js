@@ -45,6 +45,7 @@ function addItemToList(e) {
   const inputText = input.value;
   createListItemInUI(inputText);
   addTolocalStorage(inputText);
+  input.value = '';
   e.preventDefault();
 }
 
