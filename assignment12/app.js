@@ -43,8 +43,12 @@ function getListItemsFromLocalStorage() {
 //called when new item to be added in the list
 function addItemToList(e) {
   const inputText = input.value;
-  createListItemInUI(inputText);
-  addTolocalStorage(inputText);
+  if(inputText!==''){
+    createListItemInUI(inputText);
+    addTolocalStorage(inputText);
+  } else {
+    alert('Enter text to add in list');
+  }
   input.value = '';
   e.preventDefault();
 }
